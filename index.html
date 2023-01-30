@@ -1,110 +1,191 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>My first styled portfolio</title>
-  <!--<link rel="stylesheet" href="StyloCSS">-->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>VC20011_Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #b4b4b4;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
+<body class="w3-white">
 
-<body>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Profile1.jpeg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#skill" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-gears w3-xxlarge"></i>
+    <p>SKILL</p>
+  </a>
+  <a href="#workexp" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>WORK EXPERIENCE</p>
+  </a>
+  <a href="#achievement" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-graduation-cap w3-xxlarge"></i>
+    <p>ACHIEVEMENT</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<!-- Site navigation menu -->
-<div class="w3-bar w3-black">
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
-</div>
-
-<!-- Main content -->
-<div class="w3-display-container">
-  <img src="Marines_symbol.webp"alt="Lights">
-    <div class="w3-display-middle w3-large">
-      <h1>My first styled portfolio</h1>
-
-<p>Welcome to my styled portfolio!</p>
-
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;</p>
-
-<p>There should be more here, but I don't know
-what yet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias cupiditate voluptatibus est sit 
-cum quae laboriosam velit dolorum veritatis provident, sed, dolorem asperiores nemo eligendi harum vero nostrum 
-eum. </p>
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 24 November 2022<br>
-  by BVI3124.</address>
-      
-      
-      </div>
-</div>
-
-<div class="w3-container w3-black w3-centre">
-  <h1>Wanted!</h1>
-</div>
-
-
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="luffy.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Monkey D. Luffy</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="Marshall_D._Teach_Wanted_Poster.webp" style="width:100%">
-      <div class="w3-container">
-        <h5>Marshall D. Teach</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="Buggy.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Buggy</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="Shanks.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Shanks</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="Big Mom.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Charlotte Linlin</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="whiteneard.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Edward Newgate</h5>
-      </div>
-    </div>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#skill" class="w3-bar-item w3-button" style="width:25% !important">SKILL OFFERED</a>
+    <a href="#workexp" class="w3-bar-item w3-button" style="width:25% !important">WORK EXPERIENCES</a>
+    <a href="#achievement" class="w3-bar-item w3-button" style="width:25% !important">ACHIEVEMENT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 24 November 2022<br>
-  by BVI3124.</address>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-text-red" id="home">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+      <p id="mytime">Time: None</p>
+      <p id="mydate">Date: None</p>
+      <p id="timezone-name">Timezone Name: None</p>
+      <script src="main.js"></script>
+    </body>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Adil Syahmi.</h1>
+    <p>Student in Technology Automation Industry and Graphic Designer.</p>
+    <img src="Profile1.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-red">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>My name is Muhammad Adil Syahmi Bin Mohd Khiadzir an undergraduate, dedicated and hardworking student who is seeking a position as an intern from March 2023 until February 2024 where I can use my AutoCAD design, PLC, Python, Arduino and Packet Tracer CISCO skills. I have a CGPA of 3.33 in Automation Industry Electronic Technology, and I have shown proficiency in AutoCAD Design and PLC (Programmable Logic Control) during my studies. A quick learner with a passion in automation industrial who is keen on acquiring new skills and willing to learn new things to broaden knowledge. 
+    </p>
+    <div class="w3-padding-64 w3-content" id="skill">
+      <h2 class="w3-text-red">My Skills</h2>
+      <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Programmable Logic Control (PLC)</p>
+    <div class="w3-light-grey">
+      <div class="w3-red" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-red" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Microsoft Offices</p>
+    <div class="w3-light-grey">
+    <div class="w3-red" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-red" style="height:28px;width:60%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-dark-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Assignments
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">80+</span><br>
+        Meetings
+      </div>
+    </div>
+  
+  <!-- Work Experiences Section -->
+  <div class="w3-padding-64 w3-content" id="workexp">
+    <h2 class="w3-text-red">Work Experiences</h2>
+    <hr style="width:200px" class="w3-opacity">
+      <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+              <img src="kerja 1.jpg" style="width:100%">
+              <img src="kerja 2.jpg" style="width:100%">
+              <img src="kerja 5.jpg" style="width:100%">   
+          </div>
+
+          <div class="w3-half">
+              <img src="kerja 3.jpg" style="width:100%">
+              <img src="kerja 4.jpg" style="width:100%">
+          </div>
+      </div>
+      <div><p>Recent project during my studies at the University MALAYSIA Pahang (UMP).</p></div>
+  </div>
+
+  <!-- End Portfolio Section -->
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="achievement">
+    <h2 class="w3-text-red">Achievement</h2>
+    <hr style="width:200px" class="w3-opacity">
+      <img src="Chess 1.JPG" style="width:100%">
+      <p>Joined Canva Workshop 2022</p>
+      <img src="Chess 2.JPG" style="width:100%">
+      <p>Joined UMP Rapid Chess Challenge Series 2022</p>
+      <img src="Chess 3.JPG" style="width:100%">
+      <p>Joined UMP Rapid Chess Challenge Series 2022</p>
+      </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-red">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Selangor, Malaysia</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +60172664047</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: adilsyahmi111@gmail.com</p>
+    </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
 </html>
